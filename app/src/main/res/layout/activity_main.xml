@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bbkkk"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvgfg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="MORSE CODE CONVERTER"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/etinput"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/tvgfg"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/round"
+        android:backgroundTint="#FFFFFF"
+        android:gravity="start"
+        android:hint="Enter the Text"
+        android:textColor="#000"
+        android:textSize="30sp" />
+
+    <!--edit text to accept the input from the user-->
+    <LinearLayout
+        android:id="@+id/llout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/etinput"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnencode"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="1dp"
+            android:background="@drawable/mybutton"
+            android:padding="2dp"
+            android:text="EnCode"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnclear"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="1dp"
+            android:background="@drawable/mybutton"
+            android:padding="2dp"
+            android:text="clear"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btndecode"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/mybutton"
+            android:padding="2dp"
+            android:text="decode"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!--edit text to display output to the user.
+        Edit text is used since the user can copy the
+        text easily if he wants to-->
+    <EditText
+        android:id="@+id/etoutput"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/llout"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round"
+        android:gravity="start"
+        android:hint="Morse Code"
+        android:textColor="#000"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
